@@ -11,7 +11,6 @@ from io import StringIO
 from google.oauth2 import service_account
 from google.cloud.vision import AnnotateImageResponse, ImageAnnotatorClient, Feature
 import base64
-import json
 from src.utils import draw_annotations_on_image
 
 credentials = service_account.Credentials.from_service_account_file(
@@ -19,11 +18,6 @@ credentials = service_account.Credentials.from_service_account_file(
 client = ImageAnnotatorClient(credentials=credentials)
 
 
-DATE_TIME = "date/time"
-DATA_URL = (
-    "http://s3-us-west-2.amazonaws.com/streamlit-demo-data/uber-raw-data-sep14.csv.gz"
-)
-TOTAL_SAMPLES = 100000
 ALLOWED_IMAGE_EXTENSIONS = ['png', 'jpg', 'jpeg']
 ALLOWED_TEXT_EXTENSIONS = ['txt', 'csv', 'xlsx', 'xls']
 st.title("Example application")
@@ -34,12 +28,6 @@ This is a demo application to test the features of Streamlit and how it can work
 )
 
 
-@st.cache(persist=True)
-def load_data(nrows):
-    data = pd.read_csv(DATA_URL, nrows=nrows)
-    data.rename(lambda x: str(x).lower(), axis="columns", inplace=True)
-    data[DATE_TIME] = pd.to_datetime(data[DATE_TIME])
-    return data
 
 
 def transmit_vision_request(image):
