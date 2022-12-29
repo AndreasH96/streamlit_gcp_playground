@@ -1,7 +1,6 @@
-# streamlit-project
+# Streamlit gcp playground
 
-This is a basic project template for building and deploying containerized [streamlit](https://docs.streamlit.io/en/stable/index.html) apps.
+This is just me playing around with using [Streamlit](https://streamlit.io/), an open source tool to create interactive webapps through python scripting <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" heigt=20 width=20>. 
+The idea here is to able to allow the user to upload either an image or a txt/csv/xls/xlsx file, do some magic with it through GCP and then showing some nice graphics. 
 
-If you're using this for your own project/s, head to the [Getting Started guide](docs/template-info.md).
-
-This app is configured to be deployed with Google Cloud Platform's [App Engine](https://cloud.google.com/appengine).
+![image](https://user-images.githubusercontent.com/37699267/209974135-c037006b-4832-4a90-b2e1-09aa989cd36f.png)
