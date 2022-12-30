@@ -6,4 +6,6 @@ The idea here is to able to allow the user to upload either an image or a txt/cs
 Todo: 
 * Pretty much everything
 
-![image](https://user-images.githubusercontent.com/37699267/210059727-23912a65-f8ee-46be-85bb-201a4ac55c1c.png)
+
+![image](https://user-images.githubusercontent.com/37699267/210060507-f5263703-4195-4064-8025-621bce3ce7b8.png)
+
