@@ -2,4 +2,6 @@ pandas
 streamlit
 matplotlib
 google-cloud-vision
+google-cloud-language
+google-api-python-client
 Pillow
