@@ -40,7 +40,7 @@ def colorForSentiment(sentiment):
     if sentiment > 0.25:
         return "green"
     elif sentiment > -0.25:
-        return "yellow"
+        return "orange"
     return "red"
 
 
